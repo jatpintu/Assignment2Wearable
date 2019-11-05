@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/appLabel"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text="Learning Got Easy"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textSize="50dp"
+        android:fontFamily="sans-serif-black"/>
+    <TextView
+        android:id="@+id/answerLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/showImage"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:text="Answer"
+        />
+    <Button
+        android:id="@+id/showImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show Image"
+        android:onClick="showImage"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/appLabel" />
+    <ImageView
+        android:id="@+id/getImage"
+        android:layout_width="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_height="300dp"
+        />
+
+    <TextView
+        android:id="@+id/answerLabel1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/getImage"
+        android:layout_centerInParent="true"
+        android:textStyle="bold"
+        android:textSize="35dp"
+        android:textAlignment="center"
+        android:text="A) Square B) Triangle" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next Activity"
+        android:layout_centerInParent="true"
+        android:onClick="startActivity"
+        android:textSize="30dp"
+        android:layout_below="@id/answerLabel1"
+        />
+
+
+</RelativeLayout>
